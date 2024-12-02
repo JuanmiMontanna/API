@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Api</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="src/css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script type="module" src="src/js/index.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div id="selects">
+        <select name="provinces" id="provinces"></select>
+        <select name="municipalities" id="municipalities"></select>
+        <select name="fuelType" id="fuelType">
+          <option disabled selected>Choose a fuel type</option>
+          <option>Gasolina 95 E5</option>
+          <option>Gasolina 95 E10</option>
+          <option>Gasolina 95 E5 Premium</option>
+          <option>Gasolina 98 E5</option>
+          <option>Gasolina 98 E10</option>
+          <option>Gasoleo A</option>
+          <option>Gasoleo Premium</option>
+          <option>Gasoleo B</option>
+          <option>Bioetanol</option>
+          <option>Biodiesel</option>
+          <option>Gases licuados del petroleo</option>
+          <option>Gas Natural Comprimido</option>
+          <option>Gas Natural Licuado</option>
+          <option>Hidrogeno</option>
+        </select>
+      </div>
+      <label for="openNowCheckbox">
+        Mostrar solo estaciones abiertas ahora:
+        <input type="checkbox" id="openCheckbox" />
+      </label>
+    </header>
+    <div id="gasStations"></div>
+  </body>
+</html>
